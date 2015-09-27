@@ -1,4 +1,4 @@
-# React and Express #
+# Brandon M. Kelley #
 
 ### Set Up ###
 To install dependencies:

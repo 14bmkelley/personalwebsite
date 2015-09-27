@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand"
+        <% if (title === "Home") { %>id="active"<% } %>
+      ><strong>Home</strong></a>
+    </div>
+    <nav class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/about_me" 
+            <% if (title === "About Me") { %>id="active"<% } %>
+          >About</a>
+        </li>
+        <li>
+          <a href="/portfolio"
+            <% if (title === "My Portfolio") { %>id="active"<% } %>
+          >Portfolio</a>
+        </li>
+        <li>
+          <a href="/contact_me"
+            <% if (title === "Contact Me") { %>id="active"<% } %>
+          >Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>

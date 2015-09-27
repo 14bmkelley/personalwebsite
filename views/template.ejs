@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %> | Brandon M. Kelley</title>
+  <% include base/styles %>
+</head>
+
+<body>
+  
+  <% include base/navbar %>
+  
+  <% if (title === "Home") { %>
+    <% include content/home %>
+  
+  <% } else if (title === "About Me") { %>
+    <% include content/about %>
+  
+  <% } else if (title === "My Portfolio") { %>
+    <% include content/portfolio %>
+  
+  <% } else if (title === "Contact Me") { %>
+    <% include content/contact %>
+  
+  <% } else { %>
+    <% include content/not_found %>
+  <% } %>
+  
+  <% include base/scripts %>
+  
+</body>
+
+</html>

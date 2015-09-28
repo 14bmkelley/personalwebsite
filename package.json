@@ -13,7 +13,7 @@
     "express": "~4.12.2",
     "mongoose": "^4.1.7"
   },
-  "descripton": "A personal website combining React.js front-end with a Node.js + Express back-end.",
+  "descripton": "A personal website combining a Bootstrap front-end with a Node.js + Express back-end.",
   "main": "app.js",
   "author": "Brandon Kelley",
   "license": "MIT"

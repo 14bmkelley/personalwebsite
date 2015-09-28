@@ -10,9 +10,9 @@ app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ "extended": false }));
 app.use(cookieParser());
-app.use(express.static("./public"));
-app.use(express.static("./libs"));
-app.use(router);
+app.use("/", express.static("./libs"));
+app.use("/res", express.static("./public"));
+app.use("/", router);
 
 app.use(function(request, response) {
   response.render("template", {

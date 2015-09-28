@@ -23,6 +23,10 @@ hr {
   text-align: center;
 }
 
+.bg-success {
+  padding: 5px;
+}
+
 .social {
   padding-top: 10px;
 }

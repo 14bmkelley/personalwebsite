@@ -1,3 +1,35 @@
-<script src="/jquery/js/jquery-2.1.4.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/jquery/jquery-2.1.4.min.js"></script>
+<script src="/bootstrap/bootstrap.min.js"></script>
+<script src="/react/react.min.js"></script>
+<script src="/react/browser.min.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
 <script src="/res/js/main.js"></script>
+<script src="/res/jsx/SocialIcon.jsx" type="text/jsx"></script>
+<script type="text/jsx">
+  
+  var fbicon = React.createElement(SocialIcon, {
+    "url": "http://facebook.com/3r4nd0n",
+    "image": "/res/images/facebook-logo.png"
+  });
+  var twittericon = React.createElement(SocialIcon, {
+    "url": "http://twitter.com/14bmkelley",
+    "image": "/res/images/twitter-logo.png"
+  });
+  var instagramicon = React.createElement(SocialIcon, {
+    "url": "http://instagram.com/14bmkelley",
+    "image": "/res/images/instagram-logo.png"
+  });
+  var linkedinicon = React.createElement(SocialIcon, {
+    "url": "http://linkedin.com/in/14bmkelley",
+    "image": "/res/images/linkedin-logo.png"
+  });
+  
+  React.render(fbicon, document.getElementById("fbiconsm"));
+  React.render(fbicon, document.getElementById("fbiconlg"));
+  React.render(twittericon, document.getElementById("twittericonsm"));
+  React.render(twittericon, document.getElementById("twittericonlg"));
+  React.render(instagramicon, document.getElementById("instagramiconsm"));
+  React.render(instagramicon, document.getElementById("instagramiconlg"));
+  React.render(linkedinicon, document.getElementById("linkediniconsm"));
+  React.render(linkedinicon, document.getElementById("linkediniconlg"));
+</script>

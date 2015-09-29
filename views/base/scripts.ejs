@@ -3,68 +3,10 @@
 <script src="/react/react.min.js"></script>
 <script src="/react/JSXTransformer-0.12.2.js"></script>
 <script src="/res/js/main.js"></script>
-<script src="/res/jsx/SocialIcon.jsx" type="text/jsx"></script>
-<script type="text/jsx">
-  
-  var socialIcons = [
-    {
-      "url": "http://facebook.com/3r4nd0n",
-      "image": "/res/images/facebook-logo.png",
-      "id": "fbicon"
-    },
-    {
-      "url": "http://twitter.com/14bmkelley",
-      "image": "/res/images/twitter-logo.png",
-      "id": "twittericon"
-    },
-    {
-      "url": "http://instagram.com/14bmkelley",
-      "image": "/res/images/instagram-logo.png",
-      "id": "instagramicon"
-    },
-    {
-      "url": "http://linkedin.com/in/14bmkelley",
-      "image": "/res/images/linkedin-logo.png",
-      "id": "linkedinicon"
-    }
-  ];
-  
-  for (var i = 0; i < socialIcons.length; i++) {
-    var icon = React.createElement(SocialIcon, {
-      "url": socialIcons[i]["url"],
-      "image": socialIcons[i]["image"]
-    });
-    var smid = socialIcons[i]["id"] + "sm";
-    var lgid = socialIcons[i]["id"] + "lg";
-    React.render(icon, document.getElementById(smid));
-    React.render(icon, document.getElementById(lgid));
-  }
-  
-  /*
-  var fbicon = React.createElement(SocialIcon, {
-    "url": "http://facebook.com/3r4nd0n",
-    "image": "/res/images/facebook-logo.png"
-  });
-  var twittericon = React.createElement(SocialIcon, {
-    "url": "http://twitter.com/14bmkelley",
-    "image": "/res/images/twitter-logo.png"
-  });
-  var instagramicon = React.createElement(SocialIcon, {
-    "url": "http://instagram.com/14bmkelley",
-    "image": "/res/images/instagram-logo.png"
-  });
-  var linkedinicon = React.createElement(SocialIcon, {
-    "url": "http://linkedin.com/in/14bmkelley",
-    "image": "/res/images/linkedin-logo.png"
-  });
-  
-  React.render(fbicon, document.getElementById("fbiconsm"));
-  React.render(fbicon, document.getElementById("fbiconlg"));
-  React.render(twittericon, document.getElementById("twittericonsm"));
-  React.render(twittericon, document.getElementById("twittericonlg"));
-  React.render(instagramicon, document.getElementById("instagramiconsm"));
-  React.render(instagramicon, document.getElementById("instagramiconlg"));
-  React.render(linkedinicon, document.getElementById("linkediniconsm"));
-  React.render(linkedinicon, document.getElementById("linkediniconlg"));
-  */
-</script>
+<% if (title === "Home") { %>
+  <script src="/res/jsx/SocialIcon.jsx" type="text/jsx"></script>
+  <script src="/res/jsx/HomeLinker.jsx" type="text/jsx"></script>
+<% } else if (title === "About Me") { %>
+  <script src="/res/jsx/AboutSection.jsx" type="text/jsx"></script>
+  <script src="/res/jsx/AboutLinker.jsx" type="text/jsx"></script>
+<% } %>

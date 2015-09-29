@@ -16,7 +16,7 @@ app.use("/", router);
 
 app.use(function(request, response) {
   response.render("template", {
-    "title": "not_found"
+    "title": "Page Not Found"
   });
 });
 

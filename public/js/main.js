@@ -9,11 +9,11 @@ $(document).ready(function() {
     }
   });
   
-  $("button").click(function() {
-    submitForm();
+  $("#contact_submit").click(function() {
+    submitContactForm();
   });
   
-  var submitForm = function() {
+  var submitContactForm = function() {
     var name = $("input[type='name']").val();
     var email = $("input[type='email']").val();
     var message = $("textarea").val();
